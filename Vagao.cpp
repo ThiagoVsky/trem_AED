@@ -32,4 +32,5 @@ void Vagao::setUnidade(string unidade) { this->unidade = unidade; }
 
 string Vagao::toString() {
 	// TO DO
+	return "0";
 }

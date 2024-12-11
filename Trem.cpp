@@ -8,10 +8,20 @@
 
 #include "Trem.h"
 
-Trem::Trem(string codigo, string origem, string destino, int paradas) {
+Trem::Trem(string codigo, string origem, string destino, int paradas) :
+codigo(codigo),
+origem(origem),
+destino(destino),
+paradas(paradas)
+{
 
 }
-Trem::Trem(string codigo, string origem, string destino) {
+Trem::Trem(string codigo, string origem, string destino) :
+	codigo(codigo),
+	origem(origem),
+	destino(destino),
+	paradas(5)
+{
 
 }
 
@@ -24,8 +34,8 @@ void Trem::setDestino(string destino) { this->destino = destino; }
 int Trem::getParadas() { return this->paradas; }
 void Trem::setParadas(int paradas) { this->paradas = paradas; }
 
-void Trem::setLocomotiva(string modelo, int potencia, int peso) { locomotiva = Locomotiva(modelo, potencia, peso); }
-Locomotiva Trem::getLocomotiva() { return this->locomotiva; }
+void Trem::setLocomotiva(string modelo, int potencia, int peso) { locomotiva = new Locomotiva(modelo, potencia, peso); }
+Locomotiva* Trem::getLocomotiva() { return this->locomotiva; }
 
 void Trem::addVagao(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, int peso, string unidade) {
 	vagaos.push_back(Vagao(numero, tipo, conteudo, capacidade, peso, unidade));
@@ -43,11 +53,13 @@ void Trem::removeVagao(int numero) {
 vector<Vagao> Trem::getVagoes() { return this->vagaos; }
 
 int Trem::retornaPesoTotal() {
-	int pesoTotal = this->locomotiva.getPeso();
+	int pesoTotal = locomotiva->getPeso();
 	for (int i = 0; i < this->vagaos.size(); i++) {
 		pesoTotal += vagaos[i].getPeso();
 	}
+	return pesoTotal;
 }
 string Trem::toString() {
 	// TO DO
+	return "1";
 }

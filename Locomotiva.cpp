@@ -8,11 +8,11 @@
 
 #include "Locomotiva.h"
 
-Locomotiva::Locomotiva(string modelo, int potencia) {
+Locomotiva::Locomotiva(string modelo, int potencia) : modelo(modelo), potencia(potencia), peso(2400){
 
 }
-Locomotiva::Locomotiva(string modelo, int potencia, int peso) {
-
+Locomotiva::Locomotiva(string modelo, int potencia, int peso) : peso(peso), modelo(modelo), potencia(potencia){
+	
 }
 
 string Locomotiva::getModelo() { return this->modelo; }

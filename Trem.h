@@ -24,7 +24,7 @@ class Trem {
 		int paradas;
 		int numeroVagao;
 
-		Locomotiva locomotiva;
+		Locomotiva *locomotiva;
 
 		vector<Vagao> vagaos;
 
@@ -44,7 +44,7 @@ class Trem {
 		void setParadas(int paradas);
 
 		void setLocomotiva(string modelo, int potencia, int peso);
-		Locomotiva getLocomotiva();
+		Locomotiva* getLocomotiva();
 
 		void addVagao(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, int peso, string unidade);
 		void removeVagao(int numero);
