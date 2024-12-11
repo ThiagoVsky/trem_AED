@@ -1,6 +1,14 @@
 #ifndef VAGAO_H
 #define VAGAO_H 
 
+/******************************************************
+#####	Autor: Thiago da Silva Moraes
+#####	matrícula: 232035137
+#####	Faculdade de Tecnologia
+#####	Universidade de Brasília
+#####	Header Vagao
+******************************************************/
+
 #include <iostream>
 #include "Locomotiva.h"
 #include "Vagao.h"

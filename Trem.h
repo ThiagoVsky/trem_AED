@@ -1,3 +1,11 @@
+/******************************************************
+#####	Autor: Thiago da Silva Moraes
+#####	matrícula: 232035137
+#####	Faculdade de Tecnologia
+#####	Universidade de Brasília
+#####	Header Trem
+******************************************************/
+
 #ifndef TREM_H
 #define TREM_H 
 

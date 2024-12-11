@@ -1,3 +1,11 @@
+/******************************************************
+#####	Autor: Thiago da Silva Moraes
+#####	matrícula: 232035137
+#####	Faculdade de Tecnologia
+#####	Universidade de Brasília
+#####	Classe VagaoMinerio
+******************************************************/
+
 #include "vagao.h"
 
 Vagao::Vagao(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, int peso, string unidade) {
@@ -22,6 +30,6 @@ void Vagao::setCapacidade(int capacidade) { this->capacidade = capacidade; }
 string Vagao::getUnidade() { return this->unidade; }
 void Vagao::setUnidade(string unidade) { this->unidade = unidade; }
 
-string toString() {
+string Vagao::toString() {
 	// TO DO
 }

@@ -1,3 +1,11 @@
+/******************************************************
+#####	Autor: Thiago da Silva Moraes
+#####	matrícula: 232035137
+#####	Faculdade de Tecnologia
+#####	Universidade de Brasília
+#####	Classe VagaoMinerio
+******************************************************/
+
 #include "Trem.h"
 
 Trem::Trem(string codigo, string origem, string destino, int paradas) {

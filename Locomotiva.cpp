@@ -1,3 +1,11 @@
+/******************************************************
+#####	Autor: Thiago da Silva Moraes
+#####	matrícula: 232035137
+#####	Faculdade de Tecnologia
+#####	Universidade de Brasília
+#####	Classe VagaoMinerio
+******************************************************/
+
 #include "Locomotiva.h"
 
 Locomotiva::Locomotiva(string modelo, int potencia) {
