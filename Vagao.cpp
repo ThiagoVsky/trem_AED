@@ -31,6 +31,9 @@ string Vagao::getUnidade() { return this->unidade; }
 void Vagao::setUnidade(string unidade) { this->unidade = unidade; }
 
 string Vagao::toString() {
-	// TO DO
-	return "0";
+	stringstream ss;
+	if (getTipo() == FRIGORIFICO) ss << "Vagão Frigorífico = ";
+	else ss << "Vagão Minério = ";
+
+	return ss.str();
 }

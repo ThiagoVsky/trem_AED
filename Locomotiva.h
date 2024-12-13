@@ -32,6 +32,8 @@ class Locomotiva {
 		void setPeso(int peso);
 
 		void imprime();
+
+		string toString();
 };
 
 #endif

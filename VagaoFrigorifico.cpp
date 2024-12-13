@@ -16,6 +16,6 @@ int VagaoFrigorifico::getTemperatura() { return this->temperatura; }
 void VagaoFrigorifico::setTemperatura(int temperatura) { this->temperatura = temperatura; }
 string VagaoFrigorifico::toString() {
 	stringstream ss;
-	ss << Vagao::toString() << "{ " << to_string(this->getTemperatura()) << "} ";
+	ss << Vagao::toString() << "{" << to_string(this->getTemperatura()) << "graus}" << endl;
 	return ss.str();
 }

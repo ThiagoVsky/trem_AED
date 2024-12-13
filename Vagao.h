@@ -11,6 +11,9 @@
 
 #include <iostream>
 #include "Locomotiva.h"
+#include <string>
+#include <sstream>
+
 #include "Vagao.h"
 
 using namespace std;

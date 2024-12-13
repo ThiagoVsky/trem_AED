@@ -60,6 +60,14 @@ int Trem::retornaPesoTotal() {
 	return pesoTotal;
 }
 string Trem::toString() {
-	// TO DO
-	return "1";
+	stringstream ss;
+
+	ss << "Dados do trem:" << endl << locomotiva->toString() << endl;
+
+	for (int i = 0; i < vagaos.size(); i++)
+	{
+		ss << vagaos[i].toString() << endl;
+	}
+
+	return ss.str();
 }

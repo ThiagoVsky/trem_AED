@@ -11,6 +11,9 @@
 
 #include <iostream>
 #include <vector>
+#include <sstream>
+#include <string>
+
 #include "Locomotiva.h"
 #include "Vagao.h"
 

@@ -33,7 +33,3 @@ class VagaoMinerio : public Vagao {
 
 
 #endif
-
-
-
-

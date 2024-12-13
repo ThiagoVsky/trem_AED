@@ -23,3 +23,6 @@ int Locomotiva::getPeso() { return this->peso; }
 void Locomotiva::setPeso(int peso) { this->peso = peso; }
 
 void Locomotiva::imprime(){}
+string Locomotiva::toString(){
+	return "Locomotiva modeo: ", getModelo();
+}
