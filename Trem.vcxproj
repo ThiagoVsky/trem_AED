@@ -18,6 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Locomotiva.h" />
+    <ClInclude Include="Trem.h" />
+    <ClInclude Include="Vagao.h" />
+    <ClInclude Include="VagaoFrigorifico.h" />
+    <ClInclude Include="VagaoMinerio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
