@@ -1,19 +1,8 @@
-/******************************************************
-#####	Autor: Thiago da Silva Moraes
-#####	matrícula: 232035137
-#####	Faculdade de Tecnologia
-#####	Universidade de Brasília
-#####	Header Trem
-******************************************************/
-
 #ifndef TREM_H
 #define TREM_H 
 
 #include <iostream>
 #include <vector>
-#include <sstream>
-#include <string>
-
 #include "Locomotiva.h"
 #include "Vagao.h"
 
@@ -25,7 +14,6 @@ class Trem {
 		string origem;
 		string destino;
 		int paradas;
-		int numeroVagao;
 
 		Locomotiva *locomotiva;
 
@@ -47,10 +35,10 @@ class Trem {
 		void setParadas(int paradas);
 
 		void setLocomotiva(string modelo, int potencia, int peso);
-		Locomotiva* getLocomotiva();
+		Locomotiva getLocomotiva();
 
-		void addVagao(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, int peso, string unidade);
-		void removeVagao(int numero);
+		void addVagao(TIPO_VAGAO tipoVagao, string conteudo, int capacidade, string unidade);
+		void removeVagao(int codigoVagao);
 		vector<Vagao> getVagoes();
 		
 		int retornaPesoTotal();

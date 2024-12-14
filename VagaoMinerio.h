@@ -1,11 +1,3 @@
-/******************************************************
-#####	Autor: Thiago da Silva Moraes
-#####	matrícula: 232035137
-#####	Faculdade de Tecnologia
-#####	Universidade de Brasília
-#####	Header VagaoMinerio
-******************************************************/
-
 #ifndef VAGAO_MINERIO_H
 #define VAGAO_MINERIO_H 
 
@@ -17,19 +9,24 @@
 
 using namespace std;
 
-class VagaoMinerio : public Vagao {
+class VagaoMinerio : public Pessoa {
     private:
-		int forma;
+		int temperatura;
 
     public:
-		VagaoMinerio(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, int peso, string unidade, int forma);
-
-		int getForma();
-		void setForma(int forma);
-
-		string toString();
-
+		VagaoMinerio(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, string unidade, int forma) : 
+			Vagao(numero, tipo, conteudo, capacidade, unidade) { this->forma = forma; }
+		int getTemperatura() { return this->temperatura; }
+		void setTemperatura(int temperatura) { this->temperatura = temperatura; }
+		string toString() {
+			stringstream ss;
+			ss << Vago::toString() << "{ " << to_string(""temperatura:"" ) << "} ";
+			return ss.str();
+		}
 };
 
-
 #endif
+
+
+
+

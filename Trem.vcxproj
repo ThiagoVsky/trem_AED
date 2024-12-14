@@ -18,24 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Locomotiva.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Trem.cpp" />
-    <ClCompile Include="Vagao.cpp" />
-    <ClCompile Include="VagaoFrigorifico.cpp" />
-    <ClCompile Include="VagaoMinerio.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Locomotiva.h" />
-    <ClInclude Include="Trem.h" />
-    <ClInclude Include="Vagao.h" />
-    <ClInclude Include="VagaoFrigorifico.h" />
-    <ClInclude Include="VagaoMinerio.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="CLASSES_ALUNO.md" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

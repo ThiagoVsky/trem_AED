@@ -1,11 +1,3 @@
-/******************************************************
-#####	Autor: Thiago da Silva Moraes
-#####	matrícula: 232035137
-#####	Faculdade de Tecnologia
-#####	Universidade de Brasília
-#####	Header Locomotiva
-******************************************************/
-
 #ifndef LOCOMOTIVA_H
 #define LOCOMOTIVA_H 
 
@@ -20,7 +12,6 @@ class Locomotiva {
         int peso;
 
     public:
-		Locomotiva(string modelo, int potencia);
 		Locomotiva(string modelo, int potencia, int peso);
 
 		string getModelo();
@@ -28,12 +19,10 @@ class Locomotiva {
 		int getPotencia();
 		void setPotencia(int potencia);
 
-		int getPeso();
-		void setPeso(int peso);
+		int getPeso(int potencia);
+		void setPeso(string modelo);
 
 		void imprime();
-
-		string toString();
 };
 
 #endif

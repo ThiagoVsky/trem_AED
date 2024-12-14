@@ -14,10 +14,15 @@ class VagaoFrigorifico : public Vagao {
 		int temperatura;
 
     public:
-		VagaoFrigorifico(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, int peso, string unidade, int temperatura);
-		int getTemperatura();
-		void setTemperatura(int temperatura);
-		string toString();
+		VagaoFrigorifico(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, string unidade, int temperatura) : 
+			Vagao(numero, tipo, conteudo, capacidade, unidade) { this->temperatura = temperatura; }
+		int getTemperatura() { return this->temperatura; }
+		void setTemperatura(int temperatura) { this->temperatura = temperatura; }
+		string toString() {
+			stringstream ss;
+			ss << Vagao::toString() << "{ " << to_string(this->getTemperatura()) << "} ";
+			return ss.str();
+		}
 };
 
 #endif

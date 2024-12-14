@@ -1,19 +1,8 @@
 #ifndef VAGAO_H
 #define VAGAO_H 
 
-/******************************************************
-#####	Autor: Thiago da Silva Moraes
-#####	matrícula: 232035137
-#####	Faculdade de Tecnologia
-#####	Universidade de Brasília
-#####	Header Vagao
-******************************************************/
-
 #include <iostream>
 #include "Locomotiva.h"
-#include <string>
-#include <sstream>
-
 #include "Vagao.h"
 
 using namespace std;
@@ -30,28 +19,23 @@ class Vagao {
 		string conteudo;
 		int capacidade;
 		string unidade;
-		int peso;
 
     public:
-		Vagao(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, int peso, string unidade);
+		Vagao(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, string unidade);
 
-		int getNumero();
-		void setNumero(int numero);
-		TIPO_VAGAO getTipo();
-		void setTipo(TIPO_VAGAO tipo);
-		string getConteudo();
-		void setConteudo(string conteudo);
-		int getCapacidade();
-		void setPeso(int peso);
-		int getPeso();
-		void setCapacidade(int capacidade);
-		string getUnidade();
-		void setUnidade(string unidade);
+		int getNumero() { return this->numero; }
+		void setNumero(int numero) { this->numero = numero; }
+		TIPO_VAGAO getTipo() { return this->tipo; }
+		void setTipo(TIPO_VAGAO tipo) { this->tipo = tipo; }
+		string getConteudo() { return this->conteudo; }
+		void setConteudo(string conteudo) { this->conteudo = conteudo; }
+		int getCapacidade() { return this->capacidade; }
+		void setCapacidade(int capacidade) { this->capacidade = capacidade; }
+		string getUnidade() { return this->unidade; }
+		void setUnidade(string unidade) { this->unidade = unidade; }
 
 		string toString();
 };
 
 #endif
-
-
 
