@@ -34,3 +34,5 @@
 > A entrega prevê um **Diagrama de Classes**.
 >
 > **A entrega será avalisada segundo o cumprimento da tods _Especificações_ acima na data definida, com um código _main_ que demonstre a realização como solicitada**.
+
+>Título original do arquivo: CLASSES_TREM.md 
