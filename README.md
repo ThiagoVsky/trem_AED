@@ -8,20 +8,20 @@
 
 - Uma classe chamada de **Trem** que tem sua declaração como descrita de "Trem.h".
 - Uma instância da classe (objeto) "Trem" tem: 
-		- string codigo;
-		- string origem;
-		- string destino;
-		- int paradas;
-		- Locomotiva locomotiva;
-		- vector<Vagao> vagaos;
+    - string codigo;
+    - string origem;
+    - string destino;
+    - int paradas;
+    - Locomotiva *locomotiva; `// tem que ser ponteiro`
+    - vector<Vagao> vagaos;
   E ...
-    -	static const int numeroTrens = 0;
+    -	static const int numeroTrens = 0; // (?) 🤔
 
   Outras classes de dados estão em 
-  - Locomotiva
-  - Vagao (classe abstrata)
-  - VagaoFrigorifico : public Vagao
-  - VagaoMinerio : public Vagao
+  - ~~Locomotiva~~
+  - ~~Vagao (classe abstrata)~~
+  - ~~VagaoFrigorifico : public Vagao~~
+  - ~~VagaoMinerio : public Vagao~~
 
 ### Entrega
 
