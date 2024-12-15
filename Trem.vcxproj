@@ -34,7 +34,7 @@
     <ClInclude Include="VagaoMinerio.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CLASSES_ALUNO.md" />
+    <None Include="README.md" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
