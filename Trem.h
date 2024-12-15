@@ -27,7 +27,7 @@ class Trem {
 		int paradas;
 		int numeroVagao;
 
-		Locomotiva *locomotiva;
+		Locomotiva *locomotiva = nullptr;
 
 		vector<Vagao> vagaos;
 

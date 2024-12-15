@@ -9,20 +9,19 @@
 
 #include <iostream>
 #include "Trem.h"
+#include "VagaoFrigorifico.h"
 
 using namespace std;
 
 int main() {
+	setlocale(LC_ALL, "");
 
-	Trem trem = Trem("2134", "São Paulo", "Salvador", 8);
+	VagaoFrigorifico v1(1, "carne", 256, 255, "l219");
 
-	trem.setLocomotiva("LocoTrem", 8000, 4000);
+	Vagao* v = &v1;
+	
+	cout << "sem ponteiro:\n" << v1.toString();
+	cout << "com ponteiro:\n" << v->toString();
 
-	trem.addVagao(1234, MINERIO, "pedra", 5400, 4600, "unidade?");
-	trem.addVagao(1234, FRIGORIFICO, "carne", 2400, 1600, "?");
-
-	cout << trem.toString();
-
-	system("pause");
 	return 0;
 }

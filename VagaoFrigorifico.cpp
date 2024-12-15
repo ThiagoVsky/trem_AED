@@ -8,14 +8,14 @@
 
 #include "VagaoFrigorifico.h"
 
-VagaoFrigorifico::VagaoFrigorifico(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, int peso, string unidade, int temperatura) :
-	Vagao(numero, tipo, conteudo, capacidade, peso, unidade) {
-	this->temperatura = temperatura;
+VagaoFrigorifico::VagaoFrigorifico(int numero, string conteudo, int capacidade, int peso, string unidade) :
+	Vagao(numero, FRIGORIFICO, conteudo, capacidade, peso, unidade) {
+	temperatura = 1;
 }
 int VagaoFrigorifico::getTemperatura() { return this->temperatura; }
 void VagaoFrigorifico::setTemperatura(int temperatura) { this->temperatura = temperatura; }
 string VagaoFrigorifico::toString() {
 	stringstream ss;
-	ss << Vagao::toString() << "{" << to_string(this->getTemperatura()) << "graus}" << endl;
+	ss << Vagao::toString() << " | Temperatura: " << getTemperatura();
 	return ss.str();
 }

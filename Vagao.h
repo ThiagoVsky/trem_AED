@@ -19,7 +19,7 @@
 using namespace std;
 
 enum TIPO_VAGAO {
-	FRIGORIFICO,
+	FRIGORIFICO =1,
 	MINERIO
 };
 
@@ -48,7 +48,8 @@ class Vagao {
 		string getUnidade();
 		void setUnidade(string unidade);
 
-		string toString();
+		string toString(TIPO_VAGAO tipo);
+		virtual string toString();
 };
 
 #endif

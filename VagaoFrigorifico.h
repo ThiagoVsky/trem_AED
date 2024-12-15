@@ -14,14 +14,10 @@ class VagaoFrigorifico : public Vagao {
 		int temperatura;
 
     public:
-		VagaoFrigorifico(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, int peso, string unidade, int temperatura);
+		VagaoFrigorifico(int numero, string conteudo, int capacidade, int peso, string unidade);
 		int getTemperatura();
 		void setTemperatura(int temperatura);
 		string toString();
 };
 
 #endif
-
-
-
-

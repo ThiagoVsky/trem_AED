@@ -19,13 +19,13 @@ using namespace std;
 
 class VagaoMinerio : public Vagao {
     private:
-		int forma;
+		string forma;
 
     public:
-		VagaoMinerio(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, int peso, string unidade, int forma);
+		VagaoMinerio(int numero, string conteudo, int capacidade, int peso, string unidade, string forma);
 
-		int getForma();
-		void setForma(int forma);
+		string getForma();
+		void setForma(string forma);
 
 		string toString();
 
