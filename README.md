@@ -6,16 +6,16 @@
 
 ### Especificações
 
-- Uma classe chamada de **Trem** que tem sua declaração como descrita de "Trem.h".
-- Uma instância da classe (objeto) "Trem" tem: 
-    - string codigo;
-    - string origem;
-    - string destino;
-    - int paradas;
-    - Locomotiva *locomotiva; `// tem que ser ponteiro`
-    - vector\<Vagao> vagaos;
+- ~~Uma classe chamada de **Trem** que tem sua declaração como descrita de "Trem.h".~~
+- ~~Uma instância da classe (objeto) "Trem" tem:~~
+    - ~~string codigo;~~
+    - ~~string origem;~~
+    - ~~string destino;~~
+    - ~~int paradas;~~
+    - ~~Locomotiva *locomotiva; `// tem que ser ponteiro`~~
+    - ~~vector\<Vagao> vagaos;~~
   E ...
-    -	static const int numeroTrens = 0; // (?) 🤔
+    -	static const int numeroTrens = 0; // (?) 🤔 Não sei o que é isso ainda
 
   Outras classes de dados estão em 
   - ~~Locomotiva~~

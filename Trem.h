@@ -26,13 +26,9 @@ class Trem {
 		string codigo;
 		string origem;
 		string destino;
-		int paradas;
-		int numeroVagao;
-		void setNumeroVagao(int numero);
-		int getNumeroVagao();
+		int paradas = 1;
 
 		Locomotiva *locomotiva = nullptr;
-
 		vector<Vagao*> vagaos;
 
     public:

@@ -9,24 +9,17 @@
 #include "Trem.h"
 
 Trem::Trem(string codigo, string origem, string destino, int paradas) :
-codigo(codigo),
-origem(origem),
-destino(destino),
-paradas(paradas)
+Trem(codigo, origem, destino)
 {
-
+	setParadas(paradas);
 }
 Trem::Trem(string codigo, string origem, string destino) :
 	codigo(codigo),
 	origem(origem),
-	destino(destino),
-	paradas(5)
+	destino(destino)
 {
 
 }
-
-void Trem::setNumeroVagao(int numero) { this->numeroVagao = numero; }
-int Trem::getNumeroVagao() { return this->numeroVagao; }
 
 string Trem::getCodigo() { return this->codigo; }
 void Trem::setCodigo(string codigo) { this->codigo = codigo; }
@@ -41,13 +34,12 @@ void Trem::setLocomotiva(string modelo, int potencia, int peso) { locomotiva = n
 Locomotiva* Trem::getLocomotiva() { return this->locomotiva; }
 
 void Trem::addVagao(int numero, TIPO_VAGAO tipo, string conteudo, int capacidade, int peso, string unidade) {
-	setNumeroVagao(getNumeroVagao() + numero);
 	for (int i = numero; i > 0; i--) {
 		if (tipo == 1) {
-			vagaos.push_back(new VagaoFrigorifico(getNumeroVagao() - i,conteudo,capacidade,peso,unidade));
+			vagaos.push_back(new VagaoFrigorifico(vagaos.size() + 1, conteudo, capacidade, peso, unidade));
 		}
 		else {
-			vagaos.push_back(new VagaoMinerio(getNumeroVagao() - i, conteudo, capacidade, peso, unidade));
+			vagaos.push_back(new VagaoMinerio(vagaos.size() + 1, conteudo, capacidade, peso, unidade));
 		}
 	}
 }
