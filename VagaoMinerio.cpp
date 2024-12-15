@@ -9,8 +9,8 @@
 #include "VagaoMinerio.h"
 
 
-VagaoMinerio::VagaoMinerio(int numero, string conteudo, int capacidade, int peso, string unidade, string forma) :
-	Vagao(numero, MINERIO, conteudo, capacidade, peso, unidade), forma(forma) {
+VagaoMinerio::VagaoMinerio(int numero, string conteudo, int capacidade, int peso, string unidade) :
+	Vagao(numero, MINERIO, conteudo, capacidade, peso, unidade) {
 }
 
 string VagaoMinerio::getForma() { return this->forma; }

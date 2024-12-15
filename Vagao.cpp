@@ -39,7 +39,7 @@ string Vagao::toString(TIPO_VAGAO tipo) {
 	else return "tipo não identificado";
 }
 
-	string Vagao::toString() {
+string Vagao::toString() {
 	stringstream ss;
 	ss << "Número: " << to_string(getNumero())
 		<< " | Tipo: " << toString(getTipo())

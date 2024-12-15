@@ -22,7 +22,7 @@ class VagaoMinerio : public Vagao {
 		string forma;
 
     public:
-		VagaoMinerio(int numero, string conteudo, int capacidade, int peso, string unidade, string forma);
+		VagaoMinerio(int numero, string conteudo, int capacidade, int peso, string unidade);
 
 		string getForma();
 		void setForma(string forma);

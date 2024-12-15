@@ -14,7 +14,6 @@
 #include <string>
 #include <sstream>
 
-#include "Vagao.h"
 
 using namespace std;
 
@@ -49,7 +48,7 @@ class Vagao {
 		void setUnidade(string unidade);
 
 		string toString(TIPO_VAGAO tipo);
-		virtual string toString();
+		virtual string toString() = 0;
 };
 
 #endif
