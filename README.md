@@ -13,7 +13,7 @@
     - string destino;
     - int paradas;
     - Locomotiva *locomotiva; `// tem que ser ponteiro`
-    - vector<Vagao> vagaos;
+    - vector\<Vagao> vagaos;
   E ...
     -	static const int numeroTrens = 0; // (?) 🤔
 
