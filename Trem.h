@@ -19,6 +19,7 @@
 #include "VagaoFrigorifico.h"
 #include "VagaoMinerio.h"
 
+
 using namespace std;
 
 class Trem {
@@ -31,8 +32,11 @@ class Trem {
 		Locomotiva *locomotiva = nullptr;
 		vector<Vagao*> vagaos;
 
+		///static const int numeroTrens = 0;
+    	static int i;
+		const int numeroTrens;
+
     public:
-    	static const int numeroTrens = 0;
     	
 		Trem(string codigo, string origem, string destino, int paradas);
 		Trem(string codigo, string origem, string destino);
@@ -45,6 +49,7 @@ class Trem {
 		void setDestino(string destino);
 		int getParadas();
 		void setParadas(int paradas);
+		int getNumeroTrens();
 
 		void setLocomotiva(string modelo, int potencia, int peso);
 		Locomotiva* getLocomotiva();

@@ -16,9 +16,10 @@ Trem(codigo, origem, destino)
 Trem::Trem(string codigo, string origem, string destino) :
 	codigo(codigo),
 	origem(origem),
-	destino(destino)
+	destino(destino),
+	numeroTrens(numeroTrens+1)
 {
-
+	cout << numeroTrens << endl;
 }
 
 string Trem::getCodigo() { return this->codigo; }
@@ -29,6 +30,8 @@ string Trem::getDestino() { return this->destino; }
 void Trem::setDestino(string destino) { this->destino = destino; }
 int Trem::getParadas() { return this->paradas; }
 void Trem::setParadas(int paradas) { this->paradas = paradas; }
+//int Trem::getNumeroTrens() { return numeroTrens; }
+
 
 void Trem::setLocomotiva(string modelo, int potencia, int peso) { locomotiva = new Locomotiva(modelo, potencia, peso); }
 Locomotiva* Trem::getLocomotiva() { return this->locomotiva; }

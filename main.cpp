@@ -16,12 +16,11 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "");
 
-	VagaoFrigorifico v1(1, "carne", 256, 255, "l219");
-
-	Vagao* v = &v1;
 	
-	cout << "sem ponteiro:\n" << v1.toString();
-	cout << "com ponteiro:\n" << v->toString();
+	Trem trem1("LD250", "Brasilia", "SJC", 3);
+	Trem trem1("LD280", "Belém", "Palmas", 4);
+	Trem trem1("RS232", "Vitoria", "Rio de Janeiro", 8);
+
 
 	return 0;
 }
