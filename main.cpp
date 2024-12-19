@@ -30,5 +30,7 @@ int main() {
 
 	cout << trem.toString();
 
+	system("pause");
+
 	return 0;
 }
