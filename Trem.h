@@ -32,10 +32,6 @@ class Trem {
 		Locomotiva *locomotiva = nullptr;
 		vector<Vagao*> vagaos;
 
-		///static const int numeroTrens = 0;
-    	static int i;
-		const int numeroTrens;
-
     public:
     	
 		Trem(string codigo, string origem, string destino, int paradas);
@@ -49,7 +45,6 @@ class Trem {
 		void setDestino(string destino);
 		int getParadas();
 		void setParadas(int paradas);
-		int getNumeroTrens();
 
 		void setLocomotiva(string modelo, int potencia, int peso);
 		Locomotiva* getLocomotiva();

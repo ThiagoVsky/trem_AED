@@ -9,7 +9,7 @@
 #include "VagaoMinerio.h"
 
 
-VagaoMinerio::VagaoMinerio(int numero, string conteudo, int capacidade, int peso, string unidade) :
+VagaoMinerio::VagaoMinerio(int numero, string conteudo, int capacidade, int peso, string unidade) : forma("padrão"),
 	Vagao(numero, MINERIO, conteudo, capacidade, peso, unidade) {
 }
 

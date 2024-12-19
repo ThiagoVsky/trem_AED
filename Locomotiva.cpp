@@ -24,5 +24,11 @@ void Locomotiva::setPeso(int peso) { this->peso = peso; }
 
 void Locomotiva::imprime(){}
 string Locomotiva::toString(){
-	return "Locomotiva modeo: ", getModelo();
+	return 
+		"Locomotiva modelo: " +
+		getModelo() +
+		" | Potência: " +
+		to_string(getPotencia()) + 
+		" | Peso: " +
+		to_string(getPeso());
 }
